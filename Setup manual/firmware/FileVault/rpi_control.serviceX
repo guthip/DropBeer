@@ -1,0 +1,10 @@
+[Unit]
+Description=RPI Arduino control
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pi/Scripts/rpi_control.py
+
+[Install]
+WantedBy=multi-user.target
